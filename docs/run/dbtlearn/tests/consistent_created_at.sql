@@ -1,0 +1,16 @@
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  SELECT * 
+FROM AIRBNB.DEV.dim_listings_cleansed l LEFT JOIN AIRBNB.DEV.fct_reviews r ON (l.listing_id = r.listing_id )
+WHERE r.review_date<l.created_at
+LIMIT 10
+  
+  
+      
+    ) dbt_internal_test

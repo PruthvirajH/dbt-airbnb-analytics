@@ -38,4 +38,12 @@ The goal was to build an end-to-end data pipeline with dbt for transformations, 
 ```
 ---
 ## Data Flow
-![Data Flow] (images/Data_Flow.jpg)
+![Data](images/Data_Flow.jpg)
+
+---
+## Lineage Graph
+![Lineage_Graph](images/Lineage_Graph.jpg)
+
+---
+## Executive Dashboard
+![Executive_Dashboard](images/Executive_Dashboard.jpg)
