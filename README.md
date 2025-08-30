@@ -36,6 +36,10 @@ The goal was to build an end-to-end data pipeline with dbt for transformations, 
 ├── tests/           # singular tests
 └── README.md        # project documentation
 ```
+
+---
+## Project Documentation
+[Link](https://pruthvirajh.github.io/dbt-airbnb-analytics/#!/overview) 
 ---
 ## Data Flow
 ![Data](images/Data_Flow.jpg)
