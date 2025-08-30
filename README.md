@@ -1,15 +1,37 @@
-Welcome to your new dbt project!
+# Airbnb Data Pipeline with dbt, Snowflake & Preset
 
-### Using the starter project
+This project was built as part of **“The Complete dbt (Data Build Tool) Bootcamp: Zero to Hero”** by [Zoltan C. Toth](https://www.linkedin.com/in/zoltanctoth/).  
+It demonstrates how to design and implement a **modern data pipeline** using dbt, Snowflake, and Preset for visualization.
 
-Try running the following commands:
-- dbt run
-- dbt test
+---
 
+## 📌 Project Overview
+The project uses **Airbnb Berlin data** from [Inside Airbnb](http://insideairbnb.com/).  
+The goal was to build an end-to-end data pipeline with dbt for transformations, ensure data quality with tests, and visualize insights in an executive dashboard.
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+### Key Features
+- Designed a **layered data pipeline** (Raw → Staging → Core) with dbt  
+- Created **dbt models** using **CTEs** and modular SQL  
+- Implemented **data quality tests** (generic, singular, and custom macros)  
+- Leveraged `dbt_utils` for reusable testing patterns  
+- Built **snapshots** (Type 2 Slowly Changing Dimensions)  
+- Generated **documentation** for all dbt models  
+- Created an **executive dashboard in Preset** with KPIs and visualizations  
+
+---
+
+## 🛠️ Tech Stack
+- **dbt (Data Build Tool)** – for transformation, testing, and documentation  
+- **Snowflake** – as the cloud data warehouse  
+- **Preset (Apache Superset)** – for data visualization and dashboards  
+
+---
+
+## 📂 Project Structure
+```plaintext
+├── models/          # dbt models (staging, core, marts)
+├── seeds/           # seed data (full moon dates)
+├── snapshots/       # snapshot definitions (Type 2 SCD)
+├── macros/          # custom macros for testing
+├── tests/           # singular tests
+└── README.md        # project documentation
