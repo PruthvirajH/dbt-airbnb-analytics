@@ -35,3 +35,7 @@ The goal was to build an end-to-end data pipeline with dbt for transformations, 
 ├── macros/          # custom macros for testing
 ├── tests/           # singular tests
 └── README.md        # project documentation
+```
+---
+## Data Flow
+![Data Flow] (images/Data_Flow.jpg)
